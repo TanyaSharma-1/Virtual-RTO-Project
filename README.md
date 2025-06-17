@@ -39,7 +39,7 @@ This is a complete Regional Transport Office (RTO) management system built using
 
 ## 🧪 How to Run Locally
 
-### 1. Clone the Repository
+1. Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/virtual-rto.git
@@ -53,11 +53,11 @@ source venv/bin/activate  # For Linux / macOS
 # OR
 venv\Scripts\activate      # For Windows
 
-### 3. Install Dependencies
+ 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 
-### 4. Start MySQL and Setup Database
+4. Start MySQL and Setup Database
 ```bash
 -- Login to MySQL
 mysql -u root -p
@@ -69,13 +69,13 @@ GRANT ALL PRIVILEGES ON virtual_rto.* TO 'flaskuser'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 
-### 5. Run the Flask App
+5. Run the Flask App
 ```bash
 python app.py
 http://localhost:5000
 
 
-### 📂 Project Structure
+ 📂 Project Structure
 ```bash 
 virtual-rto/
 │
