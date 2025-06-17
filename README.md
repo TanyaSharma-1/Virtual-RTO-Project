@@ -45,7 +45,7 @@ This is a complete Regional Transport Office (RTO) management system built using
 git clone https://github.com/yourusername/virtual-rto.git
 cd virtual-rto
 
-### 2. Create a Virtual Environment
+2. Create a Virtual Environment
 
 ```bash
 python -m venv venv
