@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual RTO - Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+    <h3>User Registration</h3>
+    <form method="POST" enctype="multipart/form-data">
+        <div class="mb-2"><input type="text" name="name" class="form-control" placeholder="Full Name" required></div>
+        <div class="mb-2">
+            <select name="gender" class="form-control" required>
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="mb-2"><input type="date" name="dob" class="form-control" required></div>
+        <div class="mb-2"><textarea name="address" class="form-control" placeholder="Address" required></textarea></div>
+        <div class="mb-2"><input type="text" name="city" class="form-control" placeholder="City" required></div>
+        <div class="mb-2"><input type="text" name="phone" class="form-control" placeholder="Phone" required></div>
+        <div class="mb-2"><input type="email" name="email" class="form-control" placeholder="Email" required></div>
+        <div class="mb-2">
+            <input type="text" name="vehicle_type" class="form-control" placeholder="Vehicle Type" required>
+        </div>
+
+        <div class="mb-2">Photo: <input type="file" name="photo" class="form-control" required></div>
+        <div class="mb-3">Signature: <input type="file" name="signature" class="form-control" required></div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
+</body>
+</html>

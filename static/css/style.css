@@ -1,0 +1,42 @@
+/* ---------- Stylish Gradient Background ---------- */
+body {
+    background: linear-gradient(to right, #74ebd5, #ACB6E5); 
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Main Container with Glass Look ---------- */
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 16px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------- Headings ---------- */
+h3 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    border-radius: 30px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+.btn-lg {
+    font-size: 1.2rem;
+    padding: 20px 24px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}

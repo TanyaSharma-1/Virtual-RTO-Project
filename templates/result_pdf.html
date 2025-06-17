@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h2 { color: #2c3e50; }
+        .info { margin-top: 20px; }
+        .info p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h2>RTO Test Result</h2>
+    <hr>
+    <div class="info">
+        <p><strong>Name:</strong> {{ result.name }}</p>
+        <p><strong>Email:</strong> {{ result.email }}</p>
+        <p><strong>Score:</strong> {{ result.score }}</p>
+        <p><strong>Result:</strong> {{ result.result }}</p>
+        <p><strong>Exam Date:</strong> {{ result.exam_date }}</p>
+    </div>
+</body>
+</html>

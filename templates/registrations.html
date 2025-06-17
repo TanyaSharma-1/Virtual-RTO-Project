@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Registrations - Virtual RTO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+    <h3>All Registered Users</h3>
+    <a href="{{ url_for('dashboard') }}" class="btn btn-secondary mb-3">← Back to Dashboard</a>
+
+    <table class="table table-bordered table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>DOB</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Vehicle Type</th>
+                <th>Photo</th>
+                <th>Signature</th>
+                <th>Registered On</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.gender }}</td>
+                <td>{{ user.dob }}</td>
+                <td>{{ user.address }}</td>
+                <td>{{ user.city }}</td>
+                <td>{{ user.phone }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.vehicle_type }}</td>
+                <td>
+                    {% if user.photo %}
+                        <img src="{{ url_for('static', filename='uploads/' + user.photo) }}" 
+                        alt="Photo" height="120" width="120"
+                        style="object-fit: cover; border-radius: 8px;">
+                    {% else %}
+                        No photo
+                    {% endif %}
+                </td>
+                <td>
+                    {% if user.signature %}
+                        <img src="{{ url_for('static', filename='uploads/' + user.signature) }}" 
+                        alt="Signature" height="120" width="120"
+                        style="object-fit: contain; background: #f8f8f8; border-radius: 8px;">
+                    {% else %}
+                        No signature
+                    {% endif %}
+                </td>
+                <td>{{ user.reg_date }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
